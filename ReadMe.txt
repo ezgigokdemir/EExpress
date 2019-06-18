@@ -1,6 +1,12 @@
-﻿Projeyi başlatabilmek için;
+# EExpress
+This application was developed using MVC and C #.
 
-1 - Ekte verilmiş olan script dosyasını SQL Server Management Studio aracılığıyla çalıştırıp ilgili database'i oluşturun.
-2 - appsettings.json dosyasında gerekli connection bağlantısı oluştumalısınız.
-3 - Bu connection string değerini Startup.cs içerisinde 36. ve 55. satırlarda gösterildiği şekilde konumlandırmalısınız.
-4 - Ardından projeyi çalıştırabilirsiniz.
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/home.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/products.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/basket.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/paymentScreen.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/login.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/adminHome.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/productDetail.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/search.png"/>
+<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/operations.png"/>
