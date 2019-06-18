@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <i class="fas fa-user text-secondary" style="font-size:80px;margin:50px"></i>
+            </div>
+            <!-- Login Form -->
+
+            <form asp-action="AdminLogin" method="post">
+                <input type="text" id="login" class="fadeIn second" name="Username" placeholder="Kullanıcı Adı">
+                <input type="password" id="password" class="fadeIn third" name="Password" placeholder="Parola">
+                <input type="submit" class="fadeIn fourth" name="name" value="Giriş">
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Parolamı Unuttum</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/modules/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

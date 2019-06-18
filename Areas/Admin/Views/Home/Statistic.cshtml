@@ -1,0 +1,29 @@
+﻿@model EExpress.ViewModel.HomePageViewModel
+
+@{
+    int pCount = Model.Products.GroupBy(x => x.Id).Count();
+    int bCount = Model.Brands.GroupBy(x => x.BrandId).Count();
+    int cCount = Model.Categories.GroupBy(x => x.CategoryId).Count();
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 card p-25 bg-primary text-light text-center border-light">
+            <div class="card-body">
+                <h3 class="card-title">Ürün Sayısı</h3>
+                <h1 class="card-text">@pCount</h1>
+            </div>
+        </div>
+        <div class="col-lg-4 card p-25 bg-primary text-light text-center border-light">
+            <div class="card-body">
+                <h3 class="card-title">Marka Sayısı</h3>
+                <h1 class="card-text">@bCount</h1>
+            </div>
+        </div>
+        <div class="col-lg-4 card p-25 bg-primary text-light text-center border-light">
+            <div class="card-body">
+                <h3 class="card-title">Kategori Sayısı</h3>
+                <h1 class="card-text">@cCount</h1>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EExpress.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-striped table-borderless mt-4">
+    <thead>
+        <tr>
+            <th>İsim</th>
+            <th>Email</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td style="max-width:30px">@item.UserName</td>
+            <td style="max-width:30px">@item.Email</td>
+            <td>@item.PhoneNumber</td>
+            <td>
+                <a asp-action="EditUser" asp-controller="Home" asp-area="Admin" asp-route-Id="@item.Id"><i class="fas fa-edit"></i> | </a>
+                <a asp-action="DeleteUser" asp-controller="Home" asp-area="Admin" asp-route-Id="@item.Id"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
