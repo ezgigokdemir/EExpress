@@ -1,0 +1,55 @@
+﻿@model EExpress.Models.RegisterModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <i class="fas fa-user text-secondary" style="font-size:80px;margin:50px"></i>
+            </div>
+            <!-- Login Form -->
+
+            <form asp-action="Create" asp-controller="User" method="post">
+
+                <div class="text-danger" asp-validation-summary="All"></div>
+
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="fadeIn second" /><br />
+
+                <label asp-for="Email"></label><br />
+                <input asp-for="Email" class="fadeIn third" />
+
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="fadeIn fourth" />
+
+
+                <button type="submit" class="btn btn-primary m-4">Kayıt</button>
+
+                <div id="formFooter">
+                    <a class="underlineHover" asp-action="Login" asp-controller="Account" asp-area="Views">Hesabım var</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="~/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/modules/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
+
+
+

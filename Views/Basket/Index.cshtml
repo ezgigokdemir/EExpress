@@ -1,0 +1,52 @@
+﻿@model EExpress.ViewModel.HomePageViewModel
+
+@{
+    ViewData["Title"] = "Basket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-8 pt-4">
+    @foreach (var x in Model.Products.GroupBy(x => x.Id))
+    {
+        @foreach (var item in x)
+        {
+            <div class="card mb-3">
+                <div class="row no-gutter">
+                    <div class="col-md-3">
+                        <img src="~/images/@item.imageUrl" class="card-img" />
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a>@item.Name</a>
+                            </h5>
+                            <p class="card-text">
+                                @item.Description
+                            </p>
+                            <h3 class="card-text text-warning font-weight-bold">@item.Price TL</h3>
+                            <p class="card-text">x @x.Count()</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            break;
+        }
+    }
+</div>
+
+
+<div class="col-lg-4 pt-4">
+    <div class="ml-auto card">
+        <div class="card-body">
+            <form asp-action="Payment" asp-controller="Basket" method="post">
+                <h2 class="text-primary">Sipariş Özeti</h2>
+                <p>@ViewData["countTotal"] Ürün</p>
+                <br />
+                <p>Ödenecek Tutar</p>
+                <h3>@ViewData["payment"] TL</h3>
+                <input asp-action="Payment" asp-controller="Basket" asp-route-Id="" type="submit" value="ALIŞVERİŞİ TAMAMLA" class="btn btn-warning text-light" />
+            </form>
+        </div>
+    </div>
+</div>
+

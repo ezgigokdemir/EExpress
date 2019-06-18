@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-lg-3">
+    @await Component.InvokeAsync("CategoryMenu")
+    @*<hr />
+    @await Component.InvokeAsync("BrandMenu")*@
+</div>
+
+<div class="col-lg-9">
+
+    <partial name="_slider" />
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card m-3" style="width: 15rem;">
+                <img class="card-img-top" src="~/images/@item.imageUrl" style="max-height:240px" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">@item.Description</p>
+                    <h3 class="card-text text-warning font-weight-bold">@item.Price TL</h3>
+                    <form action="Home/Index" method="get">
+                        <a class="btn btn-primary" asp-action="Index" asp-controller="Basket" asp-route-Id="@item.Id">SEPETE EKLE</a>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>

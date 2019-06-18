@@ -1,0 +1,64 @@
+﻿@model EExpress.ViewModel.HomePageViewModel
+
+@{
+    ViewData["Title"] = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin-top:20px">
+                    <h3 class="panel-title text-success" style="display: inline;font-weight: bold">
+                        Ödeme Detayları
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form asp-action="Payment" asp-controller="Home" asp-area="Views" method="post" role="form">
+                        <div class="form-group">
+                            <label for="cardNumber">
+                                KART NUMARASI
+                            </label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                       required autofocus />
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="expityMonth">
+                                        SON KULLANMA TARİHİ
+                                    </label>
+                                    <div class="col-xs-6 col-lg-6 pl-ziro" style="padding-left: 0px">
+                                        <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                    </div>
+                                    <div class="col-xs-6 col-lg-6 pl-ziro" style="padding-left: 0px">
+                                        <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12 pull-right" style="margin: 0">
+                                <div class="form-group">
+                                    <label for="cvCode">
+                                        CV KODU
+                                    </label>
+                                    <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            @*<ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                </li>
+            </ul>*@
+            <br />
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary text-light" role="button">Ödemeyi Tamamla</a>
+        </div>
+    </div>
+</div>

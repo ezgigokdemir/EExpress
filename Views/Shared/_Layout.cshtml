@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>EExpress</title>
+    <link href="~/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/shop-homepage.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EExpress</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-action="Index" asp-controller="Home">
+                            ANASAYFA
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="About" asp-controller="Home" asp-area="Views">HAKKIMIZDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">İLETİŞİM</a>
+                    </li>
+                    @if (@ViewBag.UserName != null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="LogOut" asp-controller="Account" asp-area="Views">ÇIKIŞ</a>
+                        </li>
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="AdminLogin" asp-controller="Home" asp-area="Admin">ADMİN PANELİ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark" style="margin-top:75px">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="~/modules/jquery/dist/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="~/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

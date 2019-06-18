@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\images\tv4.jpg\**" />
+    <Content Remove="wwwroot\images\tv4.jpg\**" />
+    <EmbeddedResource Remove="wwwroot\images\tv4.jpg\**" />
+    <None Remove="wwwroot\images\tv4.jpg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="node_modules\bootstrap\package.json" />
+    <Content Include="node_modules\jquery\AUTHORS.txt" />
+    <Content Include="node_modules\jquery\bower.json" />
+    <Content Include="node_modules\jquery\external\sizzle\LICENSE.txt" />
+    <Content Include="node_modules\jquery\LICENSE.txt" />
+    <Content Include="node_modules\jquery\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="node_modules\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="node_modules\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="node_modules\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="node_modules\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="node_modules\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="node_modules\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.js" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="node_modules\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="node_modules\bootstrap\LICENSE" />
+    <None Include="node_modules\bootstrap\README.md" />
+    <None Include="node_modules\jquery\dist\core.js" />
+    <None Include="node_modules\jquery\dist\jquery.js" />
+    <None Include="node_modules\jquery\dist\jquery.min.js" />
+    <None Include="node_modules\jquery\dist\jquery.min.map" />
+    <None Include="node_modules\jquery\dist\jquery.slim.js" />
+    <None Include="node_modules\jquery\dist\jquery.slim.min.js" />
+    <None Include="node_modules\jquery\dist\jquery.slim.min.map" />
+    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.js" />
+    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.min.js" />
+    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.min.map" />
+    <None Include="node_modules\jquery\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
