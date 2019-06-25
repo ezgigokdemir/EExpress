@@ -1,6 +1,8 @@
 # EExpress
 This e-Commerce application was developed using MVC and .NET Core.
 
+![Alt Text](https://media.giphy.com/media/elbzFMNKQXA905Ecbg/giphy.gif)  
+
 <img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/home.png"/>
 <img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/products.png"/>
 <img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/basket.png"/>
