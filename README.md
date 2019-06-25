@@ -4,14 +4,5 @@ This e-Commerce application was developed using MVC and .NET Core.
 ![Alt Text](https://media.giphy.com/media/elbzFMNKQXA905Ecbg/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/JOYCOlRqZh2H8fd8i9/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/MEiaIz1JDsEA9cN9ek/giphy.gif)
-![Alt Text](https://media.giphy.com/media/elbzFMNKQXA905Ecbg/giphy.gif)
+![Alt Text](https://media.giphy.com/media/XDpU4kHKupBSxv5wem/giphy.gif)
 
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/home.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/products.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/basket.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/paymentScreen.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/login.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/adminHome.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/productDetail.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/search.png"/>
-<img src="https://github.com/ezgigokdemir/EExpress/blob/master/ProjectImage/operations.png"/>
